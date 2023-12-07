@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-awesome-modal",
-  "version": "0.0.0",
+  "name": "@humaidem/nuxt-awesome-modal",
+  "version": "0.0.2",
   "description": "Nuxt awesome modal module",
   "repository": "humaidem/nuxt-awesome-modal",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "bun run lint && bun run test && bun run prepack && changelogen --release && bun publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
