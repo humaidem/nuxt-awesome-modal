@@ -1,0 +1,186 @@
+.nuxt-awesome-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.nuxt-awesome-modal-backdrop-container {
+  pointer-events: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgb(107 114 128 / 0.25);
+}
+
+.nuxt-awesome-modal-component {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  display: flex;
+  overflow-y: scroll;
+}
+.nuxt-awesome-modal-component-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.nuxt-awesome-modal-component-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.nuxt-awesome-modal {
+  pointer-events: auto;
+  z-index: 3;
+}
+.nuxt-awesome-modal-component-top {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.nuxt-awesome-modal-component-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+[dir="rtl"] .nuxt-awesome-modal-component-right {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+[dir="ltr"] .nuxt-awesome-modal-component-right {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nuxt-awesome-modal-component-right-top {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+.nuxt-awesome-modal-component-right-bottom {
+  margin-left: auto;
+  margin-top: auto;
+}
+[dir="ltr"] .nuxt-awesome-modal-component-left {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+[dir="rtl"] .nuxt-awesome-modal-component-left {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nuxt-awesome-modal-component-left-top {
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.nuxt-awesome-modal-component-left-bottom {
+  margin-right: auto;
+  margin-top: auto;
+}
+.nuxt-awesome-modal-component-center {
+  margin: auto;
+}
+
+.slide-right-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-right-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+[dir="rtl"] .slide-right-enter-from,
+[dir="rtl"] .slide-right-leave-to {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+[dir="ltr"] .slide-right-enter-from,
+[dir="ltr"] .slide-right-leave-to {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.slide-left-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-left-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+[dir="ltr"] .slide-left-enter-from,
+[dir="ltr"] .slide-left-leave-to {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+[dir="rtl"] .slide-left-enter-from,
+[dir="rtl"] .slide-left-leave-to {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.slide-bottom-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-bottom-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.slide-bottom-enter-from,
+.slide-bottom-leave-to {
+  transform: translateY(100%);
+  opacity: 1;
+}
+
+.slide-top-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-top-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.slide-top-enter-from,
+.slide-top-leave-to {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.fade-in-out-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.fade-in-out-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.fade-in-out-enter-from,
+.fade-in-out-leave-to {
+  opacity: 0;
+}
+
+
+.backdrop-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.backdrop-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.backdrop-enter-from,
+.backdrop-leave-to {
+  opacity: 0;
+}
+
