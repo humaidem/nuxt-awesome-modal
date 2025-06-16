@@ -12,7 +12,6 @@ const module = defineNuxtModule({
     nuxt.options.build.transpile.push(resolver.resolve("./runtime"));
     addComponentsDir({
       path: resolver.resolve("./runtime/components")
-    }).then(() => {
     });
     addPlugin(resolver.resolve("./runtime/plugin"));
     nuxt.hook("imports:dirs", (dirs) => {
