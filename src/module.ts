@@ -9,7 +9,7 @@ export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-awesome-modal',
+    name: '@humaidem/nuxt-awesome-modal',
     configKey: 'awesomeModal',
   },
   defaults: {},
